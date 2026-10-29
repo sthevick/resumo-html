@@ -9,6 +9,27 @@
     <link rel="stylesheet" href="../style/style.css">
 
     <title>Resumo das aulas de HTML</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            background-color: beige;
+        }
+        th{
+            background-color: #bfc361;
+            border: 2px solid chocolate;
+            padding: 15px;
+        }
+        td{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
     <head>
@@ -17,9 +38,6 @@
     <header>
         <nav>
             <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
                 <li>
                     <a href="./pages/fontes.html">Fontes</a>
                 </li>
@@ -47,31 +65,56 @@
     </header>
 
     <main>
-        <section>
-            <article>
-                <h2 class="titulo-principal">Meu super texto</h2>
-                    <p class="texto-artigo texto-um">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
-                        Ipsum has been the industry's standard dummy text ever since 1966, when designers 
-                        at Letraset and James Mosley, the librarian at St Bride Printing Library in London, 
-                        took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body 
-                        Type sheets. It has survived not only many decades, but also the leap into electronic 
-                        typesetting, remaining essentially unchanged. It was popularised thanks to these sheets 
-                        and more recently with desktop publishing software like Aldus PageMaker and Microsoft Word 
-                        including versions of Lorem Ipsum.
-                    </p>
-                    <p class="texto-artigo texto-dois">
-                        &lt; Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio non aut corporis doloremque 
-                        consequatur, et delectus earum ab fugiat esse. Architecto totam adipisci ipsam unde, quo 
-                        libero provident iste id! &gt;
-                    </p>
-                    <p class="texto-artigo">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo at sed molestias!
-                        Cum nulla doloribus possimus ratione omnis aliquam laudantium quas illum consequatur
-                        accusamus. Placeat quaerat debitis quibusdam nesciunt et.
-                    </p>
-            </article>
-        </section>
+        <table>
+            <caption>Tabela de preços de cursos</caption>
+
+            <thead>
+                <tr>
+                    <th>Área</th> <th>Curso</th> <th>Investimento</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td rowspan="3">Design</td> <td>InDesign</td> <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <!-- <td>Design</td> -->
+                    <td>PhotoShop</td> 
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <!-- <td>Design</td>  -->
+                    <td>Ilustrador</td> 
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Desenvolvimento</td> 
+                    <td>HTML</td> 
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <!-- <td>Desenvolvimento</td>  -->
+                    <td>CSS</td> 
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <!-- <td>Desenvolvimento</td>  -->
+                    <td>JS</td> 
+                    <td>R$ 1.000,00</td>
+                </tr>
+                <tr>
+                    <!-- <td>Desenvolvimento</td>  -->
+                    <td>PHP</td> 
+                    <td>R$ 1.000,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Valores sujeitos a alterações sem aviso prévio</td>
+                </tr>
+            </tfoot>
+        </table>
     </main>
 
     <footer>
